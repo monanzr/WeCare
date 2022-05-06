@@ -1,0 +1,117 @@
+#hero {
+    min-height: 88%;
+    background: var(--primary-color);
+}
+
+.hero__wrapper {
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    flex-flow: wrap;
+    gap: 4rem;
+    justify-content: center;
+    /* height: 58rem; */
+}
+
+.hero__left--item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex: 35%;
+    padding-left: 3rem;
+    gap: 2rem 0;
+}
+
+.hero__left--item h1 {
+    font-size: 6rem;
+    line-height: 7rem;
+    font-family: "Barlow";
+}
+
+.hero__left--item h1 span {
+    color: #af1cf6;
+}
+
+.hero__left--item p {
+    font-size: 2rem;
+    font-family: 'Urbanist', sans-serif;
+    line-height: 3rem;
+}
+
+.left--item__demo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 0;
+    flex-direction: row;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__btn i {
+    font-size: 2rem;
+}
+
+.hero__btn p {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.hero__right--item {
+    flex: 45%;
+}
+
+.hero__img--box {
+    /* position: relative; */
+    /* min-height: 60rem; */
+    z-index: 0;
+    flex: 62%;
+}
+
+.hero__img {
+    /* z-index: -1; */
+    width: 100%;
+    /* padding-top: 3rem; */
+}
+
+@keyframes myOrbit {
+    from {
+        transform: rotate(0deg) translateX(220px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(220px) rotate(-360deg);
+    }
+}
+
+@keyframes zoom-fade {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    50% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .hero__right--item {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .hero__left--item h1 {
+        font-size: 3rem;
+        line-height: 2
+    }
+    .left--item__demo {
+        justify-content: start;
+    }
+}

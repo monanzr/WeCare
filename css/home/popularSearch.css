@@ -1,0 +1,55 @@
+#popularSearch {
+    margin: 7rem 0;
+}
+
+.popularSearch__wrapper {
+    display: flex;
+}
+
+.popularSearch__tab {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    border-right: 3px solid var(--secondary-color);
+    margin-right: 3rem;
+    justify-content: center;
+}
+
+.popularSearch__tablinks {
+    font-size: 2rem;
+    line-height: 2.5;
+    display: inline-block;
+    color: #a8b1c0;
+    font-weight: 500;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.popularSearch__tablinks.active {
+    color: var(--secondary-color);
+}
+
+.popularSearch__tabcontent--wrapper {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.popularSearch__tabcontent--box {
+    background-color: #fff;
+    padding: 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: var(--border-raduis-md);
+}
+
+.popularSearch__tabcontent--box img {
+    width: 8rem;
+    margin-bottom: 2rem;
+}
+
+.popularSearch__tabcontent--box p {
+    font-weight: 600;
+}

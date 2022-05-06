@@ -1,0 +1,34 @@
+#ourTeam {
+    padding: 5rem 0;
+}
+
+#ourTeam .title {
+    text-align: center;
+}
+
+.ourTeam__box {
+    display: flex;
+    background-color: #fff;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    border-radius: var(--border-raduis-md);
+}
+
+.ourTeam__box img {
+    width: 10rem;
+    background: #e4e8e7;
+    border-radius: var(--border-raduis-md);
+}
+
+.ourTeam__name {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.ourTeam__position {
+    color: #a8b1c0;
+    text-align: center;
+}

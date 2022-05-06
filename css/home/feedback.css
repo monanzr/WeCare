@@ -1,0 +1,51 @@
+#feedback {
+    padding: 5rem 0 20rem 0;
+    background-color: #f4f7ff;
+}
+
+.feedback__wrapper {
+    display: flex;
+}
+
+.feedback___img {
+    display: flex;
+    justify-content: center;
+}
+
+.feedback___img img {
+    width: 70%!important;
+}
+
+.feedback___content {
+    padding: 10rem 5rem;
+    flex: 50%;
+}
+
+.patient__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: stretch;
+}
+
+.patient__img img {
+    width: 10rem!important;
+    background: #03dcbf;
+    border-radius: var(--border-raduis-xl);
+}
+
+.patient__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.patient__comment p {
+    line-height: 2.5;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.patient__rating .checked {
+    color: #ffbc4d
+}

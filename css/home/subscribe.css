@@ -1,0 +1,44 @@
+#subscribe {
+    margin: 0 0;
+    padding: 5rem 0;
+    z-index: 18;
+    position: relative;
+}
+
+.subscribe {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    width: 60%;
+    margin: -15rem auto 0 auto;
+    /* padding: 7rem; */
+    border-radius: var(--border-raduis-md);
+    height: 25rem;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.subscribe h2 {
+    font-size: 4.5rem;
+    width: 70%;
+    text-align: center;
+    font-family: 'Barlow';
+}
+
+.subscribe__form {
+    background: #fff;
+    /* height: 5rem; */
+    border-radius: var(--border-raduis-sm);
+    padding: 1rem;
+}
+
+.subscribe__form input {
+    height: 100%;
+    width: 25rem;
+    outline: none;
+    border: none;
+}
