@@ -1,18 +1,19 @@
 #header {
     min-height: 10vh;
-    border-bottom: 0.05rem solid #3f3f48;
+    /* border-bottom: 0.05rem solid #3f3f48; */
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    padding: 2rem 0;
 }
 
 .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
 }
 
 .navbar__logo img {
-    height: 7rem;
+    height: 4rem;
     margin-top: 1rem;
 }
 
@@ -27,18 +28,18 @@
     justify-content: center;
     align-items: center;
     flex-flow: wrap;
-gap: 1rem;}
+    gap: 1rem;
+}
 
 .nav__list {
     /* margin: 0 1.3rem; */
     position: relative;
 }
 
-
 .nav__list:before {
     content: '';
     position: absolute;
-    background-color: #fff;
+    background-color: var(--dark-color);
     height: 1px;
     width: 100%;
     /* bottom: 12%; */
@@ -53,33 +54,16 @@ gap: 1rem;}
     transform: scaleX(1);
 }
 
-.nav__list::after {
-    content: "";
-    position: absolute;
-    right: 0px;
-    top: 35%;
-    width: 0.6rem;
-    height: 0.6rem;
-    border: 1px solid snow;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-    transition: transform 0.3s ease;
-}
-
-.nav__list:hover::after {
-    transform: rotate(225deg);
-    top: 45%;
-}
-
 .nav__link {
-    color: var(--light-color);
+    color: var(--dark-color);
     transition: all 0.4s ease-in-out;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 01.3rem;
+    font-weight: 500;
 }
 
 .nav__link:hover {
-    color: #F3F2FF;
+    color: var(--secondary-color);
 }
 
 .nav__dropdown {
@@ -110,41 +94,8 @@ gap: 1rem;}
     border-bottom: 1px solid #3f3f48;
 }
 
-.navbar__search {
-    width: 20rem;
-    display: flex;
-    justify-content: flex-end;
-    height: 4rem;
-    align-items: center;
-    transition: 0.4s ease;
-    -webkit-transition: 0.4s ease;
-}
-
-.whallet__btn {
-    padding: 1rem 5rem
-}
-
-.navbar__whallet i {
-    padding-right: 0.5rem;
-}
-
-.navbar__mood {
-    display: flex
-}
-
-.navbar__mood .navbar__mood-link {
-    display: flex;
+.navbar__link button {
     margin: 0 0.5rem;
-    padding: 1rem;
-    background: var(--primary-color);
-    border-radius: var(--border-raduis-md);
-}
-
-.navbar__mood-link img {
-    object-fit: contain;
-    width: 2rem;
-}
-
-.light__theme .navbar__mood .navbar__mood-link {
-    background: var(--light-color);
+    font-weight: 600;
+    font-size: 1.7rem;
 }

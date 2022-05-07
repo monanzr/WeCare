@@ -4,7 +4,7 @@
 
 .popularSearch__wrapper {
     display: flex;
-}
+    /* justify-content: space-evenly; */width: 100%;}
 
 .popularSearch__tab {
     display: flex;
@@ -30,24 +30,100 @@
     color: var(--secondary-color);
 }
 
-.popularSearch__tabcontent--wrapper {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
+.popularSearch__tabcontent {
+    width: 100%;
 }
+
+.popularSearch__tabcontent--wrapper {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: repeat(5, minmax(18%, 1fr));}
 
 .popularSearch__tabcontent--box {
     background-color: #fff;
-    padding: 1.5rem 4rem;
+    padding: 2rem 2rem 2rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: var(--border-raduis-md);
+    transition: all 0.3s ease-out;
 }
 
-.popularSearch__tabcontent--box img {
+.popularSearch__tabcontent--img {
+    width: 10rem;height: 10rem;border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2rem;}
+
+
+.popularSearch__tabcontent--box.blue .popularSearch__tabcontent--img {
+    border: 2px solid #B5D0FD;
+}
+
+.popularSearch__tabcontent--box.blue:hover, .popularSearch__tabcontent--box.blue:hover .popularSearch__tabcontent--img {
+    background-color: #B5D0FD;
+}
+
+.popularSearch__tabcontent--box.blue:hover .popularSearch__tabcontent--img {
+    border: 2px solid #88B4F9;
+}
+
+.popularSearch__tabcontent--box.yellow .popularSearch__tabcontent--img {
+    border: 2px solid #FFE678;
+}
+
+.popularSearch__tabcontent--box.yellow:hover, .popularSearch__tabcontent--box.yellow:hover .popularSearch__tabcontent--img {
+    background-color: #FFE678;
+}
+
+.popularSearch__tabcontent--box.yellow:hover .popularSearch__tabcontent--img {
+    border: 2px solid #F2D551;
+}
+
+.popularSearch__tabcontent--box.black .popularSearch__tabcontent--img {
+    border: 2px solid #81939E;
+}
+
+.popularSearch__tabcontent--box.black:hover, .popularSearch__tabcontent--box.black:hover .popularSearch__tabcontent--img {
+    background-color: #81939E;
+}
+
+.popularSearch__tabcontent--box.black:hover .popularSearch__tabcontent--img {
+    border: 2px solid #2A4352;
+}
+
+.popularSearch__tabcontent--box.red .popularSearch__tabcontent--img {
+    border: 2px solid #FF9898;
+}
+
+.popularSearch__tabcontent--box.red:hover, .popularSearch__tabcontent--box.red:hover .popularSearch__tabcontent--img {
+    background-color: #FF9898;
+}
+
+.popularSearch__tabcontent--box.red:hover .popularSearch__tabcontent--img {
+    border: 2px solid #FF4A4A;
+}
+
+.popularSearch__tabcontent--box.green .popularSearch__tabcontent--img {
+    border: 2px solid #83F0E1;
+}
+
+.popularSearch__tabcontent--box.green:hover, .popularSearch__tabcontent--box.green:hover .popularSearch__tabcontent--img {
+    background-color: #83F0E1;
+}
+
+.popularSearch__tabcontent--box.green:hover .popularSearch__tabcontent--img {
+    border: 2px solid #00DDC0;
+}
+
+.popularSearch__tabcontent--img img {
     width: 8rem;
-    margin-bottom: 2rem;
+
 }
 
 .popularSearch__tabcontent--box p {

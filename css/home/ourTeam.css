@@ -14,6 +14,87 @@
     align-items: center;
     gap: 2rem;
     border-radius: var(--border-raduis-md);
+    position: relative;
+}
+.ourTeam__Card {
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.ourTeam__Card .ourTeam__name,
+.ourTeam__Card .ourTeam__position,
+.ourTeam__Card img
+{
+    transition: all 0.3s ease-in-out;
+}
+.ourTeam__Card .overlay {
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background-color: #000000;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+
+}
+.ourTeam__Card:hover {
+    background-size: cover;
+    background-position: center;
+}
+
+.ourTeam__Card.one:hover {
+    background-image: url(../../assests/img/1-removebg-preview.png);
+}
+
+.ourTeam__Card.two:hover {
+    background-image: url(../../assests/img/2-removebg-preview.png);
+}
+
+.ourTeam__Card.three:hover {
+    background-image: url(../../assests/img/3-removebg-preview.png);
+}
+
+.ourTeam__Card.five:hover {
+    background-image: url(../../assests/img/5-removebg-preview.png);
+}
+
+.ourTeam__Card.six:hover {
+    background-image: url(../../assests/img/6-removebg-preview.png);
+}
+
+.ourTeam__Card.seven:hover {
+    background-image: url(../../assests/img/7-removebg-preview.png);
+}
+
+.ourTeam__Card.eight:hover {
+    background-image: url(../../assests/img/8-removebg-preview.png);
+}
+
+.ourTeam__Card.nine:hover {
+    background-image: url(../../assests/img/9-removebg-preview.png);
+}
+
+.ourTeam__Card:hover .overlay {
+    opacity: 0.4;
+}
+.ourTeam__Card:hover .ourTeam__name {
+    color: var(--light-color);
+    transform: translate3d(0, -50px, 0) scale(1.2);
+    z-index: 1;}
+
+.ourTeam__Card:hover .ourTeam__position {
+    color: var(--light-color);
+    transform: translate3d(0, -50px, 0) scale(1.2);
+    z-index: 1;}
+
+.ourTeam__Card:hover img {
+    opacity: 0;
+    transform: scale(0);
 }
 
 .ourTeam__box img {
@@ -31,4 +112,27 @@
 .ourTeam__position {
     color: #a8b1c0;
     text-align: center;
+}
+
+.carousel_01 .owl-dots {
+    text-align: center;
+    padding-top: 15px;
+    display: inline-block!important;
+
+    width: 100%;}
+
+.carousel_01 .owl-dots button.owl-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #ccc;
+    margin: 0 3px;
+}
+
+.carousel_01 .owl-dots button.owl-dot.active {
+    background-color: var(--secondary-color);
+}
+.carousel_01 .owl-dots button.owl-dot:focus {
+    outline: none;
 }

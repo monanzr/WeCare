@@ -14,7 +14,7 @@
 
 .feedback___img img {
     width: 70%!important;
-}
+    object-fit: cover;}
 
 .feedback___content {
     padding: 10rem 5rem;
@@ -48,4 +48,36 @@
 
 .patient__rating .checked {
     color: #ffbc4d
+}
+
+.carousel_02 {
+    position: relative;
+}
+
+.carousel_02 .owl-dots {
+    margin: -80px 365px 0 0;width: 100px;float: right;}
+
+.carousel_02 .owl-dots button.owl-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #ccc;
+    margin: 0 3px;
+}
+
+.carousel_02 .owl-dots button.owl-dot.active {
+    background-color: var(--secondary-color);
+}
+.carousel_02 .owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.owl-nav {
+    display: none;
+}
+
+@media only screen and (min-width:1400px) {
+    .carousel_02 .owl-dots {
+        margin: -80px 490px 0 0;}
 }

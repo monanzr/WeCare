@@ -65,3 +65,8 @@
     -o-box-shadow: inset 0 0 0 0.2rem var(--dark-color);
     color: var(--dark-color);
 }
+
+.btn__login {
+    background: transparent;
+    color: var(--dark-color);
+}

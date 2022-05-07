@@ -1,16 +1,18 @@
 #hero {
-    min-height: 88%;
+    /* min-height: 88%; */
     background: var(--primary-color);
+    height: 100%;
+    padding-top: 7rem;
 }
 
 .hero__wrapper {
     display: flex;
     align-items: center;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     flex-flow: wrap;
     gap: 4rem;
     justify-content: center;
-    /* height: 58rem; */
+    /* height: 100%; */
 }
 
 .hero__left--item {
@@ -23,14 +25,33 @@
     gap: 2rem 0;
 }
 
-.hero__left--item h1 {
+.hero__title {
     font-size: 6rem;
     line-height: 7rem;
     font-family: "Barlow";
 }
 
-.hero__left--item h1 span {
-    color: #af1cf6;
+.hero__title .hollow-text {
+    -webkit-text-stroke-color: inherit;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero__title .hollow-text [data-scroll='in'] .char {
+    -webkit-animation: wave 0.25s calc(var(--char-index) * 0.1s) ease;
+    animation: wave 0.25s calc(var(--char-index) * 0.1s) ease;
+}
+
+@-webkit-keyframes wave {
+    50% {
+        transform: translate(0, -50%);
+    }
+}
+
+@keyframes wave {
+    50% {
+        transform: translate(0, -50%);
+    }
 }
 
 .hero__left--item p {
@@ -68,37 +89,153 @@
     /* min-height: 60rem; */
     z-index: 0;
     flex: 62%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .hero__img {
     /* z-index: -1; */
-    width: 100%;
+    width: 90%;
     /* padding-top: 3rem; */
 }
 
-@keyframes myOrbit {
-    from {
-        transform: rotate(0deg) translateX(220px) rotate(0deg);
+.circles {
+    display: flex;
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__img--back {
+    position: absolute;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    color: white;
+}
+
+.hero__img--back.one {
+    width: 90%;
+    height: 90%;
+    animation: rotating 30s linear infinite;
+}
+
+.hero__img--back.two {
+    width: 80%;
+    height: 80%;
+    animation: rotating 15s linear infinite;
+}
+
+.hero__img--back.three {
+    width: 65%;
+    height: 65%;
+    animation: rotating 8s linear infinite;
+}
+
+.hero__img--back.four {
+    width: 50%;
+    height: 50%;
+    animation: rotating 4s linear infinite;
+}
+
+.hero__icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 7px;
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
     }
-    to {
-        transform: rotate(360deg) translateX(220px) rotate(-360deg);
+    100% {
+        transform: rotate(360deg);
     }
 }
 
-@keyframes zoom-fade {
-    0% {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-    50% {
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
-    }
-    100% {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-}
+
+/*@keyframes myOrbit {*/
+
+
+/*    from {*/
+
+
+/*        transform: rotate(0deg) translateX(220px) rotate(0deg);*/
+
+
+/*    }*/
+
+
+/*    to {*/
+
+
+/*        transform: rotate(360deg) translateX(220px) rotate(-360deg);*/
+
+
+/*    }*/
+
+
+/*}*/
+
+
+/*@keyframes zoom-fade {*/
+
+
+/*    0% {*/
+
+
+/*        -webkit-transform: scale(0.9);*/
+
+
+/*        transform: scale(0.9);*/
+
+
+/*    }*/
+
+
+/*    50% {*/
+
+
+/*        -webkit-transform: scale(1.5);*/
+
+
+/*        transform: scale(1.5);*/
+
+
+/*    }*/
+
+
+/*    100% {*/
+
+
+/*        -webkit-transform: scale(0.9);*/
+
+
+/*        transform: scale(0.9);*/
+
+
+/*    }*/
+
+
+/*}*/
 
 @media only screen and (max-width: 680px) {
     .hero__right--item {
