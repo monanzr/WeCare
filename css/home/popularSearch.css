@@ -144,6 +144,9 @@
     .popularSearch__tabcontent--wrapper {
         grid-template-columns: repeat(1, minmax(18%, 1fr));
     }
+    .popularSearch__tablinks {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 576px) {

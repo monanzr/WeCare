@@ -62,3 +62,17 @@
     color: var(--secondary-color);
     /* flex: 5%; */
 }
+
+@media only screen and (max-width: 767px) {}
+
+@media only screen and (max-width: 991px) and (min-width:768px) {
+    .subscribe {
+        width: 5%;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width:991px) {
+    .search {
+        margin: -7rem auto 0 auto;
+    }
+}
