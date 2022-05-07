@@ -20,6 +20,7 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    align-content: center;
 }
 
 .subscribe h2 {
@@ -44,8 +45,14 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .subscribe h2 {
+        font-size: 3.5rem
+    }
+}
+
+@media only screen and (max-width: 991px) {
     .subscribe {
         width: 90%;
-        padding: 5rem 0;
+        padding: 5rem 2rem;
     }
 }
