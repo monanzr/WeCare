@@ -2,7 +2,7 @@
     /* min-height: 88%; */
     background: var(--primary-color);
     height: 100%;
-    padding-top: 7rem;
+    padding: 7rem 0 4rem 0;
 }
 
 .hero__wrapper {

@@ -139,3 +139,39 @@
 .popularSearch__tabcontent--box p {
     font-weight: 600;
 }
+
+@media only screen and (max-width: 575px) {
+    .popularSearch__tabcontent--wrapper {
+        grid-template-columns: repeat(1, minmax(18%, 1fr));
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+    .popularSearch__tabcontent--wrapper {
+        grid-template-columns: repeat(2, minmax(18%, 1fr));
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .popularSearch__wrapper {
+        grid-template-columns: 1fr;
+    }
+    .popularSearch__tab {
+        border-right: none;
+        border-bottom: 3px solid var(--secondary-color);
+        margin-bottom: 3rem;
+        margin-right: 0;
+    }
+    .popularSearch__tab {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width:768px) {
+    .popularSearch__tabcontent--wrapper {
+        grid-template-columns: repeat(3, minmax(18%, 1fr));
+    }
+}
+
+@media only screen and (max-width: 1200px) {}

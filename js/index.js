@@ -1,7 +1,8 @@
 Splitting();
 ScrollOut({
     targets: '.word',
-    scrollingElement: '.hero__left--item' });
+    scrollingElement: '.hero__left--item'
+});
 
 
 $(document).ready(function() {
@@ -86,3 +87,37 @@ function openTab(evt, tab) {
     evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
+
+
+window.addEventListener('scroll', () => {
+    var element = document.querySelector('.findDoctor__box');
+    var position = element.getBoundingClientRect();
+
+    if (position.top < window.innerHeight && position.bottom >= 0) {
+        $('.findDoctor__box').addClass("animate__zoomIn");
+    } else {
+        $('.findDoctor__box').removeClass("animate__zoomIn");
+    }
+});
+
+window.addEventListener('scroll', () => {
+    var element = document.querySelector('.whyUs__box');
+    var position = element.getBoundingClientRect();
+
+    if (position.top < window.innerHeight && position.bottom >= 0) {
+        $('.whyUs__box').addClass("animate__zoomIn");
+    } else {
+        $('.whyUs__box').removeClass("animate__zoomIn");
+    }
+});
+
+window.addEventListener('scroll', () => {
+    var element = document.querySelector('.feedback___img');
+    var position = element.getBoundingClientRect();
+
+    if (position.top < window.innerHeight && position.bottom >= 0) {
+        $('.feedback___img').addClass("animate__bounceIn");
+    } else {
+        $('.feedback___img').removeClass("animate__bounceIn");
+    }
+});

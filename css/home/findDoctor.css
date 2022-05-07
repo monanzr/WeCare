@@ -12,14 +12,49 @@
 }
 
 .findDoctor__option--icon {
-    font-size: 2rem;
-    padding: 1rem 1.5rem;
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.9rem;
     border-radius: 50%;
+    transition: border 1s ease;
+    -webkit-transition: border 0.5s ease;
+    -moz-transition: border 0.5s ease;
+    -ms-transition: border 0.5s ease;
+    -o-transition: border 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.findDoctor__option--icon:hover {
+    border: 0.2rem dashed rgb(130 80 230 / 79%);
 }
 
 .findDoctor__option:nth-child(1) .findDoctor__option--icon {
     background-color: #eeeefd;
     color: #7b4be3;
+}
+
+.findDoctor__option:nth-child(2) .findDoctor__option--icon {
+    background-color: #F6E1EB;
+    color: #a14e76;
+}
+
+.findDoctor__option:nth-child(3) .findDoctor__option--icon {
+    background-color: #FFF8C9;
+    color: #8c802c;
+}
+
+.findDoctor__option:nth-child(1) .findDoctor__option--icon:hover {
+    border: 0.2rem dashed #7b4be3;
+}
+
+.findDoctor__option:nth-child(2) .findDoctor__option--icon:hover {
+    border: 0.2rem dashed #a14e76;
+}
+
+.findDoctor__option:nth-child(3) .findDoctor__option--icon:hover {
+    border: 0.2rem dashed #8c802c;
 }
 
 .findDoctor__option--content {
