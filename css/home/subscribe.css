@@ -8,11 +8,11 @@
 .subscribe {
     background: var(--secondary-color);
     color: var(--primary-color);
-    width: 60%;
+    width: 65%;
     margin: -15rem auto 0 auto;
     /* padding: 7rem; */
     border-radius: var(--border-raduis-md);
-    height: 25rem;
+    min-height: 25rem;
     z-index: 10;
     display: flex;
     flex-wrap: wrap;
