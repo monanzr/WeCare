@@ -1,13 +1,18 @@
+#findDoctor {
+    padding: 3rem 0 5rem 0;
+}
+
 .findDoctor__wrapper {
     display: grid;
     /* justify-content: space-around; */
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
 .findDoctor__option {
     margin: 3rem 0;
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
     align-items: flex-start;
 }
 
@@ -92,4 +97,28 @@
     padding: 1.5rem;
     border-radius: var(--border-raduis-md);
     width: 21rem;
+}
+
+@media only screen and (max-width: 575px) {}
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {}
+
+@media only screen and (max-width: 767px) {
+    .findDoctor__box {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width:768px) {
+    .findDoctor__box {
+        top: 30%;
+        right: 20%;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width:991px) {
+    .findDoctor__box {
+        top: 45%;
+        right: 28%;
+    }
 }

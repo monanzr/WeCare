@@ -7,7 +7,7 @@
 .whyUs__wrapper {
     display: grid;
     /* justify-content: space-around; */
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
 .whyUs__img {
@@ -61,4 +61,37 @@
 
 .whyUs__option i {
     color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 575px) {}
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {}
+
+@media only screen and (max-width: 767px) {
+    .whyUs__box {
+        display: none;
+    }
+    #whyUs {
+        padding: 5rem 0 5rem 0;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width:768px) {
+    .whyUs__box {
+        top: 50%;
+        left: 20%;
+    }
+    #whyUs {
+        padding: 5rem 0 5rem 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width:991px) {
+    .whyUs__box {
+        top: 38%;
+        left: 50%;
+    }
+    #whyUs {
+        padding: 5rem 0 5rem 0;
+    }
 }

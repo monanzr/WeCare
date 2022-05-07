@@ -12,7 +12,7 @@
     margin: -15rem auto 0 auto;
     /* padding: 7rem; */
     border-radius: var(--border-raduis-md);
-    min-height: 25rem;
+    min-height: 30rem;
     z-index: 10;
     display: flex;
     flex-wrap: wrap;
@@ -41,4 +41,11 @@
     width: 25rem;
     outline: none;
     border: none;
+}
+
+@media only screen and (max-width: 991px) {
+    .subscribe {
+        width: 90%;
+        padding: 5rem 0;
+    }
 }
