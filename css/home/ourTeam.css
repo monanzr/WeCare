@@ -16,16 +16,18 @@
     border-radius: var(--border-raduis-md);
     position: relative;
 }
+
 .ourTeam__Card {
     overflow: hidden;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
+
 .ourTeam__Card .ourTeam__name,
 .ourTeam__Card .ourTeam__position,
-.ourTeam__Card img
-{
+.ourTeam__Card img {
     transition: all 0.3s ease-in-out;
 }
+
 .ourTeam__Card .overlay {
     opacity: 0;
     display: flex;
@@ -40,8 +42,8 @@
     background-color: #000000;
     align-items: center;
     transition: all 0.3s ease-in-out;
-
 }
+
 .ourTeam__Card:hover {
     background-size: cover;
     background-position: center;
@@ -82,15 +84,18 @@
 .ourTeam__Card:hover .overlay {
     opacity: 0.4;
 }
+
 .ourTeam__Card:hover .ourTeam__name {
     color: var(--light-color);
     transform: translate3d(0, -50px, 0) scale(1.2);
-    z-index: 1;}
+    z-index: 1;
+}
 
 .ourTeam__Card:hover .ourTeam__position {
     color: var(--light-color);
     transform: translate3d(0, -50px, 0) scale(1.2);
-    z-index: 1;}
+    z-index: 1;
+}
 
 .ourTeam__Card:hover img {
     opacity: 0;
@@ -118,8 +123,8 @@
     text-align: center;
     padding-top: 15px;
     display: inline-block!important;
-
-    width: 100%;}
+    width: 100%;
+}
 
 .carousel_01 .owl-dots button.owl-dot {
     width: 15px;
@@ -133,6 +138,7 @@
 .carousel_01 .owl-dots button.owl-dot.active {
     background-color: var(--secondary-color);
 }
+
 .carousel_01 .owl-dots button.owl-dot:focus {
     outline: none;
 }

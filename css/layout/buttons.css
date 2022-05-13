@@ -70,3 +70,12 @@
     background: transparent;
     color: var(--dark-color);
 }
+
+.btn__findDoctor {
+    font-size: 1.4rem
+}
+
+.btn__findDoctor i {
+    padding-right: 5px;
+    margin-left: -20px
+}
