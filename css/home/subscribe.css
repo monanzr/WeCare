@@ -45,14 +45,24 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .subscribe {
+        width: 90%;
+        padding: 5rem 2rem;
+    }
     .subscribe h2 {
         font-size: 3.5rem
     }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 500px) {
     .subscribe {
-        width: 90%;
+        width: 100%;
         padding: 5rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 441px) {
+    .subscribe__form input {
+        width: 16rem;
     }
 }

@@ -92,6 +92,12 @@
     .feedback__wrapper {
         flex-wrap: wrap;
     }
+
+    #feedback {
+        padding: 5rem 0 10rem 0;
+        background-color: #f4f7ff;
+    }
+
 }
 
 @media only screen and (min-width:1400px) {

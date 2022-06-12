@@ -66,7 +66,7 @@
     gap: 1rem 0;
     flex-direction: row;
     margin-top: 1rem;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -171,71 +171,12 @@
     }
 }
 
+@media only screen and (max-width: 992px) {
+    #hero {
+        padding: 12rem 0 4rem 0;
+    }
+}
 
-/*@keyframes myOrbit {*/
-
-
-/*    from {*/
-
-
-/*        transform: rotate(0deg) translateX(220px) rotate(0deg);*/
-
-
-/*    }*/
-
-
-/*    to {*/
-
-
-/*        transform: rotate(360deg) translateX(220px) rotate(-360deg);*/
-
-
-/*    }*/
-
-
-/*}*/
-
-
-/*@keyframes zoom-fade {*/
-
-
-/*    0% {*/
-
-
-/*        -webkit-transform: scale(0.9);*/
-
-
-/*        transform: scale(0.9);*/
-
-
-/*    }*/
-
-
-/*    50% {*/
-
-
-/*        -webkit-transform: scale(1.5);*/
-
-
-/*        transform: scale(1.5);*/
-
-
-/*    }*/
-
-
-/*    100% {*/
-
-
-/*        -webkit-transform: scale(0.9);*/
-
-
-/*        transform: scale(0.9);*/
-
-
-/*    }*/
-
-
-/*}*/
 
 @media only screen and (max-width: 680px) {
     .hero__right--item {
@@ -243,12 +184,18 @@
     }
 }
 
-@media only screen and (max-width: 450px) {
-    .hero__left--item h1 {
-        font-size: 3rem;
-        line-height: 2
-    }
+@media only screen and (max-width: 576px) {
     .left--item__demo {
         justify-content: start;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .hero__left--item h1 {
+        font-size: 3.5rem;
+        line-height: 1.5;
+    }
+    .hero__left--item p {
+        font-size: 1.8rem;
     }
 }

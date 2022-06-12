@@ -1,6 +1,6 @@
 #footer {
     background: var(--light-color);
-    ;
+;
     position: relative;
 }
 
@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 4rem 0;
+    padding: 2rem 0 4rem 0;
     flex-flow: wrap;
 }
 
@@ -162,14 +162,14 @@
     color: var(--light-color);
 }
 
-.light__theme .footer__input {
-    border: 2px solid var(--light-color);
+@media only screen and (max-width: 768px) {
+    .footer__box {
+        flex: 35%;
+    }
 }
 
-.light__theme .top a {
-    color: var(--dark-color);
-}
-
-.light__theme .footer__btn {
-    color: var(--dark-color);
+@media only screen and (max-width: 576px) {
+    .footer__box {
+        flex: 100%;
+    }
 }

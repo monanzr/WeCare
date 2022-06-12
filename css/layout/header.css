@@ -99,3 +99,100 @@
     font-weight: 600;
     font-size: 1.7rem;
 }
+
+.navSide,
+.navSide__open {
+    display: none;
+}
+
+@media only screen and (max-width:992px) {
+    #header {
+        margin-bottom: 2rem
+    }
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .navbar__demo,
+    .navbar__nav {
+        display: none;
+    }
+    .navSide__Close--box {
+        border-top: 1px solid #cecece5e;
+        padding: 25px 0 25px 5px;
+        position: relative;
+    }
+    .navSide__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55px;
+        z-index: 5;
+        border: 1px solid #cecece5e;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: var(--light-color);
+    }
+    .navSide__open {
+        display: block;
+        float: right;
+    }
+    .navSide__open i {
+        float: right;
+        font-size: 25px
+    }
+    .navSide {
+        display: block;
+        position: relative;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #3f71c9f5;
+        overflow-x: hidden;
+        transition: 0.5s;
+        /* padding-top: 60px; */
+    }
+    .navSide__list {
+        border-top: 1px solid #cecece5e;
+        padding: 6px 0 6px 5px;
+    }
+    .navSide__link {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 16px;
+        color: var(--light-color);
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .navbar__links {
+        display: none;
+    }
+
+    .navSide__list .navbar__links {
+        display: block;
+    }
+
+    .btn__signIn, .btn__login {
+        background: var(--light-color);
+        color: var(--dark-color);
+        margin: 1rem 0.5rem;
+    }
+
+    .btn__signIn:hover, .btn__login:hover {
+        background: var(--secondary-color);
+        color: var(--light-color);
+    }
+}
